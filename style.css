@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 8px;
+  padding: 8px;
+  font-family: sans-serif;
+  background-color: var(--primary-color);
+  color: black;
+}
