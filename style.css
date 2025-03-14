@@ -84,7 +84,8 @@ nav ul li a {
   color: #333;
 }
 
-nav ul li a:active {
+nav ul li a:active,
+nav ul li a:hover {
   color: #043a53;
 }
 
@@ -128,7 +129,6 @@ nav ul li a:active {
 }
 .hero-content h1 {
   font-size: 4rem;
-  font-weight: 800;
   line-height: 5rem;
   letter-spacing: -2px;
   text-indent: 36px;
@@ -159,14 +159,22 @@ nav ul li a:active {
   font-size: 18px;
   box-shadow: 0px 40px 130px 1px #043a53;
 }
-.hero-buttons div {
+.hero-buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.hero-buttons a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   padding: 16px 24px;
 }
-.hero-buttons div a {
+.hero-buttons a:hover {
+  opacity: 0.8;
+}
+.hero-buttons a {
   font-size: 18px;
   color: var(--secondary-color);
 }
