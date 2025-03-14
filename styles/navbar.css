@@ -1,0 +1,117 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 24px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #043a53;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #12141d;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+  color: #043a53;
+}
+
+.auth-links {
+  display: flex;
+}
+
+.auth-links a {
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 42px;
+  margin-left: 10px;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.auth-links a:first-child {
+  background-color: white;
+  color: #12141d;
+}
+
+.auth-links a:last-child {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.sidenav {
+  display: none;
+}
+
+.icon img {
+  width: 34px;
+  height: 34px;
+}
+
+#sidebarLinks {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 10;
+  height: 100vh;
+}
+
+#sidebarLinks ul {
+  list-style: none;
+  padding: 0 25px;
+  width: 60vw;
+  height: 100%;
+  text-align: center;
+}
+
+#sidebarLinks ul li {
+  padding: 20px 10px;
+  background-color: #043a53;
+  color: white;
+  width: 100%;
+}
+
+#sidebarLinks ul li:hover {
+  background-color: #04263d;
+}
+
+.sidenav button {
+  border: none;
+  background-color: white;
+  padding: 8px 12px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1080px) {
+  header {
+    background-color: white;
+  }
+  nav,
+  .auth-links {
+    display: none;
+  }
+
+  .sidenav,
+  #sidebarLinks .auth-links {
+    display: block;
+  }
+}
