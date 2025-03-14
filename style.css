@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 8px;
-  padding: 8px;
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
   background-color: var(--primary-color);
   color: black;
@@ -52,4 +52,61 @@ h6 {
 
 p {
   line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 24px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #043a53;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #12141d;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:active {
+  color: #043a53;
+}
+
+.auth-links {
+  display: flex;
+}
+
+.auth-links a {
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 42px;
+  margin-left: 10px;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.auth-links a:first-child {
+  background-color: white; /* Blue for Log In */
+  color: #12141d;
+}
+
+.auth-links a:last-child {
+  background-color: var(--secondary-color); /* Green for Sign Up */
+  color: var(--primary-color);
 }
