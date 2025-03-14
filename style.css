@@ -110,3 +110,63 @@ nav ul li a:active {
   background-color: var(--secondary-color); /* Green for Sign Up */
   color: var(--primary-color);
 }
+
+#hero {
+  height: 700px;
+  padding: 100px 120px;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 32px;
+}
+.hero-content {
+  text-align: center;
+  padding: 0 20px;
+  color: #12141d;
+}
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 5rem;
+  letter-spacing: -2px;
+  text-indent: 36px;
+  margin: 0;
+}
+
+.hero-content h1 span {
+  color: var(--secondary-color);
+}
+
+.hero-content p {
+  font-size: 20px;
+  opacity: 0.7;
+  padding: 0 20px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.hero-buttons button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 55px;
+  background-color: var(--secondary-color); /* Green for Sign Up */
+  color: white;
+  font-size: 18px;
+  box-shadow: 0px 40px 130px 1px #043a53;
+}
+.hero-buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+}
+.hero-buttons div a {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
