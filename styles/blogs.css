@@ -133,13 +133,13 @@
   padding: 16px 0;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1400px) {
   #blogs {
     padding: 100px 50px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1400px) {
   #blogs {
     padding: 50px 0px;
   }
@@ -212,7 +212,6 @@
 
   .blogs-card {
     overflow-x: hidden;
-    width: 70vw;
     flex: 100%;
   }
 }

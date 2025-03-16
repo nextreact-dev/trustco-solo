@@ -56,9 +56,10 @@
 .banner-images > img {
   position: relative;
   left: -12%;
+  width: 100%;
 }
 
-.background-vector {
+.background-vector1 {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -75,7 +76,7 @@
   z-index: -1;
 }
 
-.background-vector div {
+.background-vector1 div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,4 +141,90 @@
   padding: 1rem;
   border-radius: 100px;
   background-color: rgb(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1400px) {
+  #cta-banner {
+    flex-direction: column;
+  }
+
+  .banner-info {
+    left: 0;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-images {
+    overflow: hidden;
+  }
+
+  .background-vector1 {
+    top: 37%;
+    left: 84%;
+  }
+
+  .background-vector3 {
+    top: 75%;
+    left: 0%;
+  }
+
+  .banner-images > img {
+    position: initial;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-info h2 {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .banner-info a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+
+  .banner-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .background-vector1,
+  .background-vector2,
+  .background-vector3 {
+    width: 15vw;
+  }
+
+  .background-vector1 div,
+  .background-vector2 div,
+  .background-vector3 div {
+    width: 50px;
+    height: 50px;
+  }
+
+  .background-vector1 div img,
+  .background-vector2 div img,
+  .background-vector3 div img {
+    width: 5vw;
+  }
+}
+
+@media only screen and (max-width: 487px) {
+  .background-vector1 div,
+  .background-vector2 div,
+  .background-vector3 div {
+    width: 35px;
+    height: 35px;
+  }
 }
