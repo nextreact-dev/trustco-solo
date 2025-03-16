@@ -1,4 +1,4 @@
-footer {
+#links-footer-section {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -8,6 +8,7 @@ footer {
   padding-bottom: 80px;
   padding-left: 150px;
   border-bottom-width: 1px;
+  background-color: white;
 }
 
 .social-media {
@@ -78,14 +79,113 @@ footer {
   color: #404040;
 }
 
+#developer-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.frame {
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.frame > p {
+  padding: 20px 100px;
+  border-bottom: 1px solid gray;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.frame p span {
+  color: #6439ff;
+}
+
+.frame > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px 30px 100px;
+}
+
+.frame div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.developer-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+
+.developer-profile img {
+  width: 80px;
+  height: 80px;
+}
+
+#footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 150px;
+  border-top: 2px solid gray;
+  color: #92a7b0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.terms-privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.global-language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.global-language select {
+  background-color: transparent;
+  border: none;
+  color: #92a7b0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  cursor: pointer;
+  outline: none;
+}
+
+.global-language img {
+  width: 24px;
+  height: 24px;
+}
+
 @media only screen and (max-width: 1200px) {
-  footer {
+  #links-footer-section {
     padding: 80px 50px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  footer {
+  #links-footer-section {
     flex-wrap: wrap;
     padding: 80px 20px;
   }
@@ -110,5 +210,9 @@ footer {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .frame div p {
+    font-size: 14px;
   }
 }
