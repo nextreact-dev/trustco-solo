@@ -146,6 +146,20 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .building-bridges-content h4 {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .building-bridges-content p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
   .circle {
     left: 50%;
   }

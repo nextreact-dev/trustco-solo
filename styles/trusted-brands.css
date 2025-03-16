@@ -12,6 +12,7 @@
   line-height: 24px;
   color: black;
 }
+
 .brand-logos {
   display: flex;
   justify-content: space-between;
@@ -20,11 +21,6 @@
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 1080px) {
-  .brand-logos {
-    gap: 32px;
-  }
-}
 @media only screen and (max-width: 1400px) {
   .trustedBrands {
     flex-wrap: wrap;
@@ -33,5 +29,25 @@
 
   .brand-logos {
     justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .brand-logos {
+    gap: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .trustedBrands h2 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .brand-logos img {
+    width: 66.83px;
+    height: 21.99px;
   }
 }

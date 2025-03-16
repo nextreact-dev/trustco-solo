@@ -30,6 +30,29 @@
 
 @media only screen and (max-width: 1080px) {
   #numbers {
+    padding: 20px 50px;
     flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #numbers {
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  #numbers h4 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  #numbers p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
   }
 }

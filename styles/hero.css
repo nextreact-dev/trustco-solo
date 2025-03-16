@@ -102,4 +102,19 @@
   .hero-buttons {
     flex-direction: column;
   }
+
+  .hero-content h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 }

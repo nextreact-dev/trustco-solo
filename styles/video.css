@@ -31,7 +31,7 @@
   color: white;
 }
 
-h3 {
+.video-info h3 {
   font-size: 3.438rem;
   font-weight: 700;
   letter-spacing: -2px;
@@ -39,7 +39,7 @@ h3 {
   line-height: 1.2;
 }
 
-h3 span {
+.video-info h3 span {
   color: #f0b73f;
 }
 
@@ -55,15 +55,32 @@ h3 span {
   #video-section {
     padding: 50px 20px 0px 20px;
   }
+
   .video-info {
     flex-direction: column;
     gap: 32px;
   }
+
   h3 {
     margin: 0;
   }
+
   .video-info p {
     margin: 0;
     padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video-info h3 {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+  }
+
+  .video-info p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
