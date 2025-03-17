@@ -32,6 +32,6 @@
   }
 
   .brand-logos {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
