@@ -1,0 +1,29 @@
+#numbers {
+  padding: 100px 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 64px;
+  background-color: white;
+}
+
+#numbers div {
+  text-align: center;
+}
+
+#numbers h4 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #043a53;
+  letter-spacing: -2%;
+  line-height: 72px;
+  margin: 0;
+}
+
+#numbers p {
+  font-size: 24px;
+  color: #1e1e1e;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
