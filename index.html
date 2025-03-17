@@ -454,43 +454,109 @@
     </main>
     <!-- Footer section -->
     <footer>
-      <div class="social-media">
-        <a href="#" class="logo"
-          ><img src="assets/logo.svg" alt="logo" />Trustco.</a
-        >
-        <div class="social-media-links">
-          <a href="#"
-            ><img src="/assets/facebook.svg" alt="Facebook page link"
-          /></a>
-          <a href="#"
-            ><img src="/assets/instagram-fill.svg" alt="Instagram page link"
-          /></a>
-          <a href="#"
-            ><img src="/assets/youtube-fill.svg" alt="Youtube page link"
-          /></a>
+      <!-- Links Section -->
+      <section id="links-footer-section">
+        <div class="social-media">
+          <a href="#" class="logo"
+            ><img src="assets/logo.svg" alt="logo" />Trustco.</a
+          >
+          <div class="social-media-links">
+            <a href="#"
+              ><img src="/assets/facebook.svg" alt="Facebook page link"
+            /></a>
+            <a href="#"
+              ><img src="/assets/instagram-fill.svg" alt="Instagram page link"
+            /></a>
+            <a href="#"
+              ><img src="/assets/youtube-fill.svg" alt="Youtube page link"
+            /></a>
+          </div>
         </div>
-      </div>
-      <div class="footer-description">
-        An awesome & poweful tools for your business, increase business revenue.
-        with evaluating in depth variety of data sets and including the speed of
-        tech adaptation we can build bridges between any companies and their
-        customers.
-      </div>
-      <div class="links">
-        <div class="home-links">
-          <h5>Home</h5>
-          <a href="#">Features </a>
-          <a href="#">Solutions</a>
-          <a href="#">Resources</a>
-          <a href="#">Pricing</a>
+        <div class="footer-description">
+          An awesome & poweful tools for your business, increase business
+          revenue. with evaluating in depth variety of data sets and including
+          the speed of tech adaptation we can build bridges between any
+          companies and their customers.
         </div>
-        <div class="about-us-links">
-          <h5>About Us</h5>
-          <a href="#">Company </a>
-          <a href="#">Contact</a>
-          <a href="#">Career</a>
+        <div class="links">
+          <div class="home-links">
+            <h5>Home</h5>
+            <a href="#">Features </a>
+            <a href="#">Solutions</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+          </div>
+          <div class="about-us-links">
+            <h5>About Us</h5>
+            <a href="#">Company </a>
+            <a href="#">Contact</a>
+            <a href="#">Career</a>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Developer Frame Section -->
+      <section id="developer-frame">
+        <div class="frame">
+          <p>
+            This website is developed by trainees at
+            <span>Archi’s Academy</span>
+          </p>
+          <div>
+            <p>Collaborators</p>
+            <div class="developer-profile">
+              <a href="#">
+                <img
+                  src="/assets/Ellipse 3.png"
+                  alt="Developer 1 Profile Picture"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/Ellipse 4.png"
+                  alt="Developer 2 Profile Picture"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/Ellipse 5.png"
+                  alt="Developer 3 Profile Picture"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/Ellipse 6.png"
+                  alt="Developer 4 Profile Picture"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/Ellipse 7.png"
+                  alt="Developer 5 Profile Picture"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer-bottom">
+        <p>
+          © <span id="previous-year">2022</span>-<span id="current-year"
+            >2023</span
+          >
+          Trustco.
+        </p>
+        <ul class="terms-privacy">
+          <li><a href="#">Term of Service </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="global-language">
+          <img src="/assets/global-line.svg" alt="Global Icon" />
+          <select>
+            English
+            <img src="/assets/arrow-down-s-fill.svg" alt="Down Arrow" />
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+          </select>
+        </div>
+      </section>
     </footer>
 
     <script>
@@ -502,6 +568,10 @@
           x.style.width = "70vw";
         }
       }
+
+      let year = new Date().getFullYear();
+      document.getElementById("previous-year").innerHTML = year - 1;
+      document.getElementById("current-year").innerHTML = year;
     </script>
   </body>
 </html>
