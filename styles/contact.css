@@ -1,0 +1,170 @@
+#contact {
+  gap: 10px;
+  padding: 100px 120px;
+}
+
+.contact-header {
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #12141d;
+  margin: 0;
+  text-align: center;
+}
+
+.contact-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #12141d;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  flex: 33.33%;
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+}
+
+.card h2 {
+  margin-bottom: -10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0%;
+  margin-bottom: 42px;
+  color: #404040;
+}
+
+.card a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #043a53;
+}
+
+.card a img {
+  width: 24px;
+  height: 24px;
+}
+
+#message {
+  gap: 10px;
+  padding: 100px 120px;
+  background-color: white;
+}
+
+.input-fields {
+  padding-right: 84px;
+  padding-left: 84px;
+  color: #91a7b0;
+}
+
+.input-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #91a7b0;
+  flex: 50%;
+}
+
+.input img {
+  width: 36px;
+  height: 36px;
+}
+
+.input input {
+  padding: 12px;
+  border: none;
+}
+
+::placeholder {
+  color: #91a7b0;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #91a7b0;
+}
+
+textarea {
+  width: 100%;
+}
+
+.submit-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.check {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: #12141d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.check img {
+  height: 32px;
+  width: 32px;
+}
+
+.check p span {
+  color: #043a53;
+}
+
+.submit-check button {
+  background-color: #043a53;
+  padding: 16px 32px;
+  border-radius: 42px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
