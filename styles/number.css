@@ -27,3 +27,9 @@
   font-weight: 700;
   letter-spacing: 0;
 }
+
+@media only screen and (max-width: 1080px) {
+  #numbers {
+    flex-wrap: wrap;
+  }
+}
