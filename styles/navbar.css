@@ -31,6 +31,7 @@ nav ul li a {
 nav ul li a:active,
 nav ul li a:hover {
   color: #043a53;
+  border-bottom: 3px solid #04263d;
 }
 
 .auth-links {
@@ -39,8 +40,8 @@ nav ul li a:hover {
 
 .auth-links a {
   text-decoration: none;
-  padding: 14px 16px;
   border-radius: 42px;
+  padding: 14px 16px;
   margin-left: 10px;
   gap: 10px;
   font-size: 16px;
@@ -49,11 +50,27 @@ nav ul li a:hover {
 .auth-links a:first-child {
   background-color: white;
   color: #12141d;
+  width: 100px;
+  transition: width 0.3s ease-in-out;
+  text-align: center;
 }
 
 .auth-links a:last-child {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  width: 100px;
+  transition: width 0.3s ease-in-out;
+  text-align: center;
+}
+
+.auth-links a:first-child:hover {
+  background-color: #d3e3ee;
+  width: 120px;
+}
+
+.auth-links a:last-child:hover {
+  background-color: #0c5280;
+  width: 120px;
 }
 
 .sidenav {
@@ -91,6 +108,7 @@ nav ul li a:hover {
 
 #sidebarLinks ul li:hover {
   background-color: #04263d;
+  border-bottom: 3px solid #04263d;
 }
 
 .sidenav button {
