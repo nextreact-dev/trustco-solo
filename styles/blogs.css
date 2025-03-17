@@ -1,0 +1,129 @@
+#blogs {
+  padding: 100px 150px;
+  background-color: white;
+}
+
+.blogs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 77px;
+}
+
+.blogs-header h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -2%;
+  color: #12141d;
+}
+
+.blogs-header a,
+.see-all-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.see-all-link a img {
+  width: 24px;
+  height: 24px;
+}
+
+.blogs-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.blogs {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogs-card {
+  gap: 24px;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: white;
+  flex: 50%;
+}
+
+.blogs-card img {
+  width: 358.66px;
+  height: 257px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blogs-card .blogs-info {
+  gap: 16px;
+  padding-right: 25px;
+  padding-bottom: 24px;
+  padding-left: 25px;
+}
+
+.blog-date {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.blog-date p:last-child {
+  font-weight: 400;
+  color: #404040;
+}
+
+.blog-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.blog-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #404040;
+}
+
+.read-story-link {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.read-story-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.see-all-link {
+  display: none;
+}
