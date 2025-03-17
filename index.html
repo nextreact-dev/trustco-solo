@@ -29,27 +29,28 @@
 
       <!-- Sidebar toggle button -->
       <div class="sidenav">
-        <button class="icon" onclick="myFunction()">
+        <button type="button" class="icon" onclick="myFunction()">
           <img src="assets/menu.svg" alt="Menu" />
         </button>
       </div>
-
+      
       <!-- authentication links -->
       <div class="auth-links">
         <a href="#">Log In</a>
         <a href="#">Sign Up</a>
       </div>
     </header>
-
+    
     <!-- Side navigation menu -->
     <div id="sidebarLinks">
       <ul>
+        <li><a href="javascript:void(0)" onclick="myFunction()">&times;</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Solutions</a></li>
         <li><a href="#">Company</a></li>
         <li><a href="#">Resources</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Log In</a></li>
+        <li><a href="#" class="login">Log In</a></li>
         <li><a href="#">Sign Up</a></li>
       </ul>
     </div>
@@ -115,10 +116,10 @@
     <script>
       function myFunction() {
         var x = document.getElementById("sidebarLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+        if (x.style.width === "70vw") {
+          x.style.width = "0";
         } else {
-          x.style.display = "block";
+          x.style.width = "70vw";
         }
       }
     </script>
