@@ -18,10 +18,11 @@
   color: #12141d;
 }
 
-.testimonial-header a {
+.testimonial-header a,
+.see-all-link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
   border-radius: 55px;
   font-weight: 700;
@@ -31,7 +32,7 @@
   text-align: right;
 }
 
-.testimonial-header a img {
+.see-all-link a img {
   width: 24px;
   height: 24px;
 }
@@ -43,12 +44,24 @@
   justify-content: space-between;
 }
 
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 64px;
+}
+
 .testimonial-card {
   gap: 24px;
   border-radius: 16px;
   padding: 24px;
   background-color: white;
   flex: 50%;
+}
+
+.testimonial-card:first-child {
+  display: none;
 }
 
 .testimonial-card blockquote {
@@ -100,7 +113,6 @@
   justify-content: center;
   align-items: center;
   gap: 11px;
-  margin-top: 64px;
 }
 
 .carousel .not-active {
@@ -117,4 +129,86 @@
   border-radius: 10px;
   border: 2px solid #043a53;
   background-color: #043a53;
+}
+
+.see-all-link {
+  display: none;
+  padding: 64px 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  #testimonials {
+    padding: 100px 50px;
+  }
+  .testimonial-header {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #testimonials {
+    padding: 0;
+  }
+
+  .testimonial-header {
+    justify-content: center;
+  }
+
+  .testimonial-header h3 {
+    margin-bottom: -50px;
+    text-align: center;
+    padding: 50px 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+  }
+
+  .testimonial-header a {
+    display: none;
+  }
+
+  .testimonial-card p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .testimonial-info img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .testimonial-info .testimonial-name h4 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .testimonial-info .testimonial-name p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .see-all-link {
+    display: flex;
+  }
+
+  .testimonial-container {
+    flex-direction: column-reverse;
+  }
+
+  .testimonial-container {
+    overflow: hidden;
+  }
+
+  .testimonial-card:first-child {
+    display: block;
+  }
+
+  .testimonial-card {
+    overflow-x: hidden;
+    width: 70vw;
+    flex: 100%;
+  }
 }

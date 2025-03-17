@@ -64,6 +64,45 @@
   #benefits {
     padding: 50px 20px;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .first-benefit-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .first-benefit-card h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .first-benefit-card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .benefit-card h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .benefit-card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .benefit-card img {
+    width: 93.33px;
   }
 }
 
