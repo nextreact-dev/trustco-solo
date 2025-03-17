@@ -49,10 +49,13 @@ footer {
   flex: 50%;
 }
 
-.home-links,
-.about-us-link {
-  flex: 15%;
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 100px;
 }
+
 .home-links h5,
 .about-us-links h5 {
   text-wrap: nowrap;
@@ -73,4 +76,39 @@ footer {
   line-height: 28px;
   letter-spacing: 0%;
   color: #404040;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer {
+    padding: 80px 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    flex-wrap: wrap;
+    padding: 80px 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .home-links h5,
+  .about-us-links h5 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .home-links a,
+  .about-us-links a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
