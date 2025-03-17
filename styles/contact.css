@@ -1,5 +1,4 @@
 #contact {
-  gap: 10px;
   padding: 100px 120px;
 }
 
@@ -15,26 +14,31 @@
 .contact-label {
   font-weight: 500;
   font-size: 20px;
-  line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
   color: #12141d;
-  text-align: center;
   margin-bottom: 50px;
 }
 
 .card-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  align-self: stretch;
   gap: 32px;
 }
 
 .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  align-self: stretch;
+  flex-direction: column;
   background-color: white;
   border-radius: 16px;
   padding: 24px;
   flex: 33.33%;
+  grid-auto-rows: 1fr;
 }
 
 .card img {
@@ -76,7 +80,6 @@
 }
 
 #message {
-  gap: 10px;
   padding: 100px 120px;
   background-color: white;
 }
@@ -133,6 +136,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  gap: 20px;
 }
 
 .check {
@@ -167,4 +171,68 @@ textarea {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  #contact {
+    padding: 100px 40px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #message {
+    padding: 100px 40px;
+  }
+
+  .input-fields {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #contact {
+    padding: 50px 20px;
+  }
+
+  .contact-header {
+    font-size: 32px;
+  }
+
+  .contact-label {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  #message {
+    padding: 50px 20px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+    padding: 8px 12px;
+  }
+
+  .input img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .submit-check {
+    flex-direction: column;
+  }
+
+  .submit-check button {
+    width: 100%;
+  }
 }
