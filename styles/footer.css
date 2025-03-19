@@ -250,4 +250,8 @@
   .frame div p {
     font-size: 14px;
   }
+
+  .frame > p {
+    padding: 20px 50px;
+  }
 }
