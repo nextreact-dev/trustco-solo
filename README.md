@@ -42,7 +42,7 @@ I started learning JavaScript and was even more enthused with making websites in
 
 ## How to reach me
 
-[Link to Email](mailto:kdmali723@gmail.com)
+[📫 kdmali723@gmail.com](mailto:kdmali723@gmail.com)
 
 📱+919689489711
 
